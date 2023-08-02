@@ -1,0 +1,12 @@
+L = 5, k = 4
+
+When the initial population of the rabbits is 0.2 kilo-rabbits, the population growth starts rather slow, however, it eventually speeds up and reaches its inflection 
+point, or maximum growth,  at around t = 0.8. It then slows down and converges towards 5 kilo-rabbits, which is the carrying capacity L. 
+When the initial population of the rabbits is 2 kilo-rabbits, the maximum population growth is at t = 0, but there are no inflection points as the graph's curvature is
+always negative. Again, the graph appears to converge to 5 kilo-rabbits.
+When the initial population of the rabbits is 8 kilo-rabbits, the graph begins with a rapid decrease.
+There is no maximum population growth because the graph is always decreasing and there is no inflection point for the 
+same reason. Unlike the other graphs which converge to 5 kilo-rabbits from the bottom, this one converges to it from the top. 
+One thing to note is that these solutions are not fully representative of real life, as while they capture the expected convergence on a population value and so so 
+
+the slow initial growth at small values,  
