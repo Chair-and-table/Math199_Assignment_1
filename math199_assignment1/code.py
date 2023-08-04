@@ -6,11 +6,11 @@ k = 4
 L = 5
 xstart = 0
 xstop = 2
-ystart = 0
+ystart = -3
 ystop = 10
 xstep = 0.1
 ystep = 0.2
-linelength = 0.2
+linelength = 0.3
 
 def dydx(t,R, k, L):
     # t is declared but never used to comply with scipy solve_ivp
@@ -35,7 +35,7 @@ plt.plot(x, z.T)
 
 slopefield(x, y, k,L,linelength)
 
-plt.title("Rate of rabbit population growth over time")
+plt.title("Rabbit population dynamics  over time")
 plt.xlabel('t (years)')
 plt.ylabel('R (kilo rabbits)')
 plt.show()
