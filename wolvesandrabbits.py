@@ -2,8 +2,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.integrate import solve_ivp
 
-k = 2
-L = 2
+k = 4
+L = 10
 xstart = 0
 xstop = 20
 ystart = -3
@@ -18,8 +18,8 @@ def dydx(t,y, k, L):
     r = y[1]
 
 
-    dwdt = -w + r * w
-    drdt = k*r * (1-r/L)-L*r*w
+    dwdt = r * w- w
+    drdt = k*r * (1-r/L)-L/2*r*w
 
 
     return [dwdt,drdt]
@@ -28,13 +28,13 @@ def dydx(t,y, k, L):
 x = np.arange(start=xstart, stop= xstop, step= xstep)
 y = np.arange(start = ystart, stop = ystop, step=ystep)
 
-sol1 = solve_ivp(dydx, [xstart,xstop],[10,0.3], args=(k,L), dense_output=True, max_step= 0.01,first_step = 0.01)
+sol1 = solve_ivp(dydx, [xstart,xstop],[0.3,1], args=(k,L), dense_output=True, max_step= 0.01,first_step = 0.01)
 z = sol1.sol(x)
-plt.plot(x, z.T)
+plt.plot(x, z.T, label=('100s of wolves', 'kilo-rabbits'))
+plt.legend()
 
 
-
-plt.title("Rate of rabbit and wolf population growth")
+plt.title("Population of wolves W (100s of wolves) and Rabbits R (kilo-rabbits)")
 plt.xlabel('t (years)')
-plt.ylabel('100s of animals')
+plt.ylabel('amount of animals')
 plt.show()

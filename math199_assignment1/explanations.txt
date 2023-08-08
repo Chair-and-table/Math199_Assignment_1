@@ -1,6 +1,6 @@
 L = 5, k = 4
 
-the differential equation (dydx = blabla) attempts to describe population growth by capturing the fact that unbounded exponential growth is not representative of reality and eventually growth would reach a plateu. 
+the differential equation (dydx = blabla) attempts to describe population growth by capturing the fact that unbounded exponential growth is not representative of reality and eventually growth would reach a plateau. 
 In this assignment, we solve the differential equation and analyze its propreties, commenting on how representative they are on the real world. We also comment on how different variables affect the solution.
 
 
@@ -9,6 +9,6 @@ When the initial population of the rabbits is 0.2 kilo-rabbits, the population g
 
 
 On the parameters k and L:
-k and L both have to greater than 0, or else you get nonsense results.
+k and L both have to be greater than 0, or else you get nonsense results.
 As K is increased, the graph approaches L faster. if k decreases, the graph approaches L slower. If k = 0, then the graph is the line y = y0. If k < 0, then the graph is exponential, which implies k can never be less than or equal to zero as neither of these cases would happen in real life. L determines what value the graph converges to if k > 0. 
 
