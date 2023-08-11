@@ -2,8 +2,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.integrate import solve_ivp
 
-k = 3
-L = -2
+k = 4
+L = 5
 xstart = 0
 xstop = 2
 ystart = 0
