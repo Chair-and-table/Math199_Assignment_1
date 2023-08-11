@@ -1,5 +1,7 @@
 L = 5, k = 4
 
+this is just the text file that i would send to ethan for him to add to latex
+
 the differential equation (dydx = blabla) attempts to describe population growth by capturing the fact that unbounded exponential growth is not representative of reality and eventually growth would reach a plateau. 
 In this assignment, we solve the differential equation and analyze its propreties, commenting on how representative they are on the real world. We also comment on how different variables affect the solution.
 

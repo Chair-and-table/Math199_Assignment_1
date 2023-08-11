@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 from scipy.integrate import solve_ivp
 
 k = 4
-L = 10
+L = 5
 xstart = 0
 xstop = 20
 ystart = -3
@@ -16,11 +16,8 @@ def dydx(t,y, k, L):
     # t is declared but never used to comply with scipy solve_ivp
     w = y[0]
     r = y[1]
-
-
     dwdt = r * w- w
-    drdt = k*r * (1-r/L)-L/2*r*w
-
+    drdt = k*r * (1-r/L)-L*r*w
 
     return [dwdt,drdt]
 
@@ -34,7 +31,7 @@ plt.plot(x, z.T, label=('100s of wolves', 'kilo-rabbits'))
 plt.legend()
 
 
-plt.title("Population of wolves W (100s of wolves) and Rabbits R (kilo-rabbits)")
-plt.xlabel('t (years)')
-plt.ylabel('amount of animals')
+plt.title("Population of Wolves W (100s of wolves) and Rabbits R (kilo-rabbits) over time", fontsize =20)
+plt.xlabel('t (years)', fontsize = 15)
+plt.ylabel('Population', fontsize = 15)
 plt.show()
